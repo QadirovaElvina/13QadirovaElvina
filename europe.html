@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валюта Европы - Конвертер валют</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .currency-info-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .currency-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .currency-flag {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .currency-title {
+      flex: 1;
+    }
+    
+    .currency-title h1 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    
+    .currency-title p {
+      margin: 0;
+      color: #666;
+      font-size: 18px;
+    }
+    
+    .currency-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    .currency-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .currency-section h2 {
+      color: #333;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .currency-section p {
+      line-height: 1.6;
+      color: #444;
+    }
+    
+    .banknotes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .banknote {
+      width: calc(33.333% - 10px);
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .banknote img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .banknote-caption {
+      padding: 8px;
+      background: #f5f5f5;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+      .currency-sections {
+        grid-template-columns: 1fr;
+      }
+      
+      .banknote {
+        width: calc(50% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="currency-info-container">
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+    
+    <div class="currency-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/500px-Flag_of_Europe.svg.png" alt="Флаг Европейского Союза" class="currency-flag">
+      <div class="currency-title">
+        <h1>Евро (EUR)</h1>
+        <p>Официальная валюта Еврозоны и вторая по значимости резервная валюта мира</p>
+      </div>
+    </div>
+    
+    <div class="currency-sections">
+      <div class="currency-section">
+        <h2>О валюте</h2>
+        <p>Евро (код валюты: EUR, символ: €) — официальная валюта 20 из 27 стран Европейского союза, известных вместе как еврозона. Один евро равен 100 центам (или евроцентам). Европейский центральный банк (ЕЦБ) отвечает за выпуск и регулирование валюты.</p>
+        
+        <p>Евро был введен в безналичное обращение 1 января 1999 года, а наличные банкноты и монеты появились 1 января 2002 года. Это вторая по объему торгов валюта на международных валютных рынках после доллара США и вторая по величине резервная валюта.</p>
+        
+        <p>Название "евро" было официально принято в 1995 году в Мадриде. Символ € основан на греческой букве эпсилон (Є) и является отсылкой к первой букве слова "Европа".</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Денежная система</h2>
+        <p>Денежная система еврозоны управляется Европейским центральным банком (ЕЦБ) и Европейской системой центральных банков (ЕСЦБ). ЕЦБ отвечает за:</p>
+        
+        <ul>
+          <li>Определение и реализацию денежно-кредитной политики еврозоны</li>
+          <li>Проведение валютных операций</li>
+          <li>Управление официальными валютными резервами стран еврозоны</li>
+          <li>Обеспечение бесперебойного функционирования платежных систем</li>
+          <li>Поддержание ценовой стабильности (основная цель ЕЦБ)</li>
+        </ul>
+        
+        <p>ЕЦБ независим от правительств стран-членов ЕС и принимает решения, исходя из интересов всей еврозоны. Главный инструмент денежно-кредитной политики ЕЦБ — установление ключевых процентных ставок.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Банкноты и монеты</h2>
+        <p>В обращении находятся банкноты евро номиналом 5, 10, 20, 50, 100, 200 и 500 евро (хотя выпуск новых банкнот номиналом 500 евро был прекращен в 2019 году), а также монеты номиналом 1, 2, 5, 10, 20 и 50 центов, и 1 и 2 евро.</p>
+        
+        <p>Банкноты евро имеют единый дизайн для всех стран еврозоны, в то время как монеты имеют общую европейскую сторону и национальную сторону, уникальную для каждой страны-эмитента.</p>
+        
+        <div class="banknotes">
+          <div class="banknote">
+            <img src="https://en.numista.com/catalogue/photos/zone_euro/63a582672229f8.49500828-original.jpg" alt="50 евро">
+            <div class="banknote-caption">50 евро (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://en.numista.com/catalogue/photos/zone_euro/63b57a7b7c7022.73439260-original.jpg" alt="20 евро">
+            <div class="banknote-caption">20 евро (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://en.numista.com/catalogue/photos/zone_euro/5e9cb3076e6a22.95795116-original.jpg" alt="100 евро">
+            <div class="banknote-caption">100 евро (лицевая сторона)</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="currency-section">
+        <h2>История валюты</h2>
+        <p>История евро прошла несколько ключевых этапов:</p>
+        
+        <ol>
+          <li><strong>1957 г.</strong> - Подписание Римского договора, положившего начало Европейскому экономическому сообществу.</li>
+          <li><strong>1992 г.</strong> - Подписание Маастрихтского договора, предусматривающего создание экономического и валютного союза.</li>
+          <li><strong>1999 г.</strong> - Введение евро в безналичное обращение в 11 странах ЕС.</li>
+          <li><strong>2002 г.</strong> - Введение наличных банкнот и монет евро.</li>
+          <li><strong>2002-2023 гг.</strong> - Постепенное расширение еврозоны до 20 стран.</li>
+        </ol>
+        
+        <p>Евро был создан для углубления экономической интеграции в Европе, устранения валютных рисков и транзакционных издержек, а также для создания единого рынка с единой валютой.</p>
+      </div>
+    </div>
+    
+    <div class="currency-section">
+      <h2>Роль в мировой экономике</h2>
+      <p>Евро играет важную роль в мировой экономике:</p>
+      
+      <ul>
+        <li>Вторая по значимости резервная валюта после доллара США (около 20% мировых валютных резервов)</li>
+        <li>Вторая наиболее торгуемая валюта на международных валютных рынках</li>
+        <li>Валюта, в которой номинировано около 40% международных долговых ценных бумаг</li>
+        <li>Официальная валюта не только стран еврозоны, но и некоторых других территорий (Монако, Сан-Марино, Ватикан и др.)</li>
+        <li>Валюта привязки для более чем 30 стран мира</li>
+      </ul>
+      
+      <p>Евро является символом европейской интеграции и одним из наиболее осязаемых достижений Европейского союза. Несмотря на периодические кризисы, такие как долговой кризис 2010-2012 годов, евро продолжает оставаться стабильной и надежной валютой.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  </div>
+</body>
+</html>

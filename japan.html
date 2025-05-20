@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валюта Японии - Конвертер валют</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .currency-info-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .currency-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .currency-flag {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .currency-title {
+      flex: 1;
+    }
+    
+    .currency-title h1 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    
+    .currency-title p {
+      margin: 0;
+      color: #666;
+      font-size: 18px;
+    }
+    
+    .currency-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    .currency-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .currency-section h2 {
+      color: #333;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .currency-section p {
+      line-height: 1.6;
+      color: #444;
+    }
+    
+    .banknotes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .banknote {
+      width: calc(33.333% - 10px);
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .banknote img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .banknote-caption {
+      padding: 8px;
+      background: #f5f5f5;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+      .currency-sections {
+        grid-template-columns: 1fr;
+      }
+      
+      .banknote {
+        width: calc(50% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="currency-info-container">
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+    
+    <div class="currency-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/500px-Flag_of_Japan.svg.png" alt="Флаг Японии" class="currency-flag">
+      <div class="currency-title">
+        <h1>Японская иена (JPY)</h1>
+        <p>Официальная валюта Японии и третья по объему торгов валюта в мире</p>
+      </div>
+    </div>
+    
+    <div class="currency-sections">
+      <div class="currency-section">
+        <h2>О валюте</h2>
+        <p>Японская иена (код валюты: JPY, символ: ¥) — официальная валюта Японии. Иена не делится на более мелкие единицы, что делает ее одной из немногих валют мира с такой особенностью. Банк Японии отвечает за выпуск и регулирование валюты.</p>
+        
+        <p>Иена является третьей наиболее торгуемой валютой на международном валютном рынке после доллара США и евро. Она также входит в корзину специальных прав заимствования (СПЗ) Международного валютного фонда.</p>
+        
+        <p>Название "иена" происходит от японского слова "эн" (円), что означает "круглый", "круг" или "округлый объект", что отражает форму монет, использовавшихся в прошлом.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Денежная система</h2>
+        <p>Денежная система Японии управляется Банком Японии, который был основан в 1882 году. Банк Японии выполняет следующие функции:</p>
+        
+        <ul>
+          <li>Выпуск банкнот и монет</li>
+          <li>Реализация денежно-кредитной политики</li>
+          <li>Обеспечение стабильности финансовой системы</li>
+          <li>Проведение финансовых операций (включая операции на открытом рынке)</li>
+          <li>Управление валютными резервами</li>
+        </ul>
+        
+        <p>Банк Японии известен своей нетрадиционной денежно-кредитной политикой, включая политику отрицательных процентных ставок и количественное смягчение, направленные на борьбу с дефляцией и стимулирование экономического роста.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Банкноты и монеты</h2>
+        <p>В обращении находятся банкноты номиналом 1000, 5000 и 10000 иен, а также монеты номиналом 1, 5, 10, 50, 100 и 500 иен.</p>
+        
+        <p>Японские банкноты известны своим высоким качеством и сложными элементами защиты. На банкнотах изображены известные японские исторические личности и культурные символы.</p>
+        
+        <div class="banknotes">
+          <div class="banknote">
+            <img src="https://shopofmoney.com/upload/iblock/3d0/487e1qwhkjy22u4ygyfwyhdpr0m150rr.jpg" alt="1000 иен">
+            <div class="banknote-caption">1000 иен (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://en.numista.com/sales_archive/pictures/67370f65c31c1.jpg" alt="5000 иен">
+            <div class="banknote-caption">5000 иен (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/10000_Yenes_%28Anverso%29.jpg" alt="10000 иен">
+            <div class="banknote-caption">10000 иен (лицевая сторона)</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="currency-section">
+        <h2>История валюты</h2>
+        <p>История японской иены прошла несколько ключевых этапов:</p>
+        
+        <ol>
+          <li><strong>1871 г.</strong> - Введение иены в качестве официальной валюты Японии в рамках денежной реформы периода Мэйдзи.</li>
+          <li><strong>1897 г.</strong> - Принятие золотого стандарта.</li>
+          <li><strong>1931 г.</strong> - Отказ от золотого стандарта.</li>
+          <li><strong>1945-1952 гг.</strong> - Период оккупации после Второй мировой войны, когда иена была привязана к доллару США.</li>
+          <li><strong>1971 г.</strong> - После краха Бреттон-Вудской системы иена перешла к плавающему курсу.</li>
+          <li><strong>1985 г.</strong> - Соглашение Плаза, которое привело к значительному укреплению иены.</li>
+        </ol>
+        
+        <p>В 1990-х годах Япония вступила в период экономической стагнации, известный как "потерянное десятилетие", что привело к длительной дефляции и низким процентным ставкам, которые сохраняются до сих пор.</p>
+      </div>
+    </div>
+    
+    <div class="currency-section">
+      <h2>Экономическое значение</h2>
+      <p>Японская иена играет важную роль в мировой экономике:</p>
+      
+      <ul>
+        <li>Третья наиболее торгуемая валюта в мире после доллара США и евро</li>
+        <li>Одна из резервных валют мира (около 5% мировых валютных резервов)</li>
+        <li>Часто используется как "валюта-убежище" в периоды глобальной экономической нестабильности</li>
+        <li>Важная валюта для операций керри-трейд из-за низких процентных ставок в Японии</li>
+        <li>Ключевая валюта в Азиатско-Тихоокеанском регионе</li>
+      </ul>
+      
+      <p>Курс иены исторически имеет тенденцию к укреплению в периоды глобальной экономической неопределенности, что отражает статус Японии как крупного кредитора и экспортера капитала. В то же время, сильная иена создает проблемы для японских экспортеров, делая их продукцию менее конкурентоспособной на мировых рынках.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  </div>
+</body>
+</html>

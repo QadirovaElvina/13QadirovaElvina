@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валюта Азербайджана - Конвертер валют</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .currency-info-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .currency-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .currency-flag {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .currency-title {
+      flex: 1;
+    }
+    
+    .currency-title h1 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    
+    .currency-title p {
+      margin: 0;
+      color: #666;
+      font-size: 18px;
+    }
+    
+    .currency-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    .currency-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .currency-section h2 {
+      color: #333;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .currency-section p {
+      line-height: 1.6;
+      color: #444;
+    }
+    
+    .banknotes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .banknote {
+      width: calc(33.333% - 10px);
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .banknote img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .banknote-caption {
+      padding: 8px;
+      background: #f5f5f5;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+      .currency-sections {
+        grid-template-columns: 1fr;
+      }
+      
+      .banknote {
+        width: calc(50% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="currency-info-container">
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+    
+    <div class="currency-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Azerbaijan.svg/1200px-Flag_of_Azerbaijan.svg.png" alt="Флаг Азербайджана" class="currency-flag">
+      <div class="currency-title">
+        <h1>Азербайджанский манат (AZN)</h1>
+        <p>Официальная валюта Азербайджанской Республики</p>
+      </div>
+    </div>
+    
+    <div class="currency-sections">
+      <div class="currency-section">
+        <h2>О валюте</h2>
+        <p>Азербайджанский манат (код валюты: AZN, символ: ₼) — официальная валюта Азербайджанской Республики. Один манат равен 100 гяпикам. Центральный банк Азербайджана (Национальный банк) отвечает за выпуск и регулирование валюты.</p>
+        
+        <p>Современный манат был введен в обращение 1 января 2006 года, заменив старый манат в соотношении 1 новый манат = 5000 старых манатов. Это было сделано для стабилизации экономики и упрощения денежного обращения.</p>
+        
+        <p>Название "манат" исторически связано с русским словом "монета", которое, в свою очередь, происходит от латинского "moneta".</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Денежная система</h2>
+        <p>Денежная система Азербайджана управляется Центральным банком Азербайджана, который был основан в 1992 году после обретения страной независимости. Банк отвечает за:</p>
+        
+        <ul>
+          <li>Выпуск национальной валюты</li>
+          <li>Поддержание ценовой стабильности</li>
+          <li>Регулирование банковской системы</li>
+          <li>Управление золотовалютными резервами</li>
+          <li>Реализацию денежно-кредитной политики</li>
+        </ul>
+        
+        <p>Азербайджанский манат имеет плавающий обменный курс, хотя Центральный банк периодически вмешивается для поддержания стабильности. Экономика Азербайджана сильно зависит от нефтегазового сектора, что влияет на стабильность национальной валюты.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Банкноты и монеты</h2>
+        <p>В обращении находятся банкноты номиналом 1, 5, 10, 20, 50, 100 и 200 манатов, а также монеты номиналом 1, 3, 5, 10, 20 и 50 гяпиков.</p>
+        
+        <p>Банкноты современного маната отличаются высоким качеством печати и имеют различные элементы защиты от подделки, включая водяные знаки, защитные нити и голограммы.</p>
+        
+        <div class="banknotes">
+          <div class="banknote">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/1_manat_-_2020_-_obv.jpg/330px-1_manat_-_2020_-_obv.jpg" alt="1 манат">
+            <div class="banknote-caption">1 манат (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://en.numista.com/catalogue/photos/azerbaidjan/5ea1a84cc0e9b2.25842005-original.jpg" alt="5 манатов">
+            <div class="banknote-caption">5 манатов (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/10_manat_obv.jpg" alt="10 манатов">
+            <div class="banknote-caption">10 манатов (лицевая сторона)</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="currency-section">
+        <h2>История валюты</h2>
+        <p>История азербайджанской валюты прошла несколько этапов:</p>
+        
+        <ol>
+          <li><strong>1919-1920 гг.</strong> - Первый манат был введен во время короткого периода независимости Азербайджанской Демократической Республики.</li>
+          <li><strong>1920-1991 гг.</strong> - В советский период в Азербайджане использовался советский рубль.</li>
+          <li><strong>1992-2006 гг.</strong> - После обретения независимости был введен первый постсоветский манат.</li>
+          <li><strong>С 2006 г. по настоящее время</strong> - Введен современный манат (AZN) в результате деноминации.</li>
+        </ol>
+        
+        <p>Деноминация 2006 года была необходима из-за высокой инфляции в 1990-х годах. Новый манат стал символом экономической стабилизации страны и укрепления ее финансовой системы.</p>
+      </div>
+    </div>
+    
+    <div class="currency-section">
+      <h2>Экономические показатели</h2>
+      <p>Азербайджанский манат тесно связан с экономикой страны, которая в значительной степени зависит от экспорта нефти и газа. Ключевые факторы, влияющие на курс маната:</p>
+      
+      <ul>
+        <li>Мировые цены на нефть</li>
+        <li>Объемы экспорта энергоносителей</li>
+        <li>Состояние мировой экономики</li>
+        <li>Внутренняя экономическая политика</li>
+        <li>Политическая стабильность в регионе</li>
+      </ul>
+      
+      <p>В последние годы правительство Азербайджана предпринимает шаги по диверсификации экономики, чтобы снизить зависимость от нефтегазового сектора и обеспечить долгосрочную стабильность национальной валюты.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  </div>
+</body>
+</html>

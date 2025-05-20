@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валюта России - Конвертер валют</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .currency-info-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .currency-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .currency-flag {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .currency-title {
+      flex: 1;
+    }
+    
+    .currency-title h1 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    
+    .currency-title p {
+      margin: 0;
+      color: #666;
+      font-size: 18px;
+    }
+    
+    .currency-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    .currency-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .currency-section h2 {
+      color: #333;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .currency-section p {
+      line-height: 1.6;
+      color: #444;
+    }
+    
+    .banknotes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .banknote {
+      width: calc(33.333% - 10px);
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .banknote img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .banknote-caption {
+      padding: 8px;
+      background: #f5f5f5;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+      .currency-sections {
+        grid-template-columns: 1fr;
+      }
+      
+      .banknote {
+        width: calc(50% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="currency-info-container">
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+    
+    <div class="currency-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/500px-Flag_of_Russia.svg.png" alt="Флаг России" class="currency-flag">
+      <div class="currency-title">
+        <h1>Российский рубль (RUB)</h1>
+        <p>Официальная валюта Российской Федерации</p>
+      </div>
+    </div>
+    
+    <div class="currency-sections">
+      <div class="currency-section">
+        <h2>О валюте</h2>
+        <p>Российский рубль (код валюты: RUB, символ: ₽) — официальная валюта Российской Федерации. Один рубль равен 100 копейкам. Центральный банк Российской Федерации (Банк России) отвечает за выпуск и регулирование валюты.</p>
+        
+        <p>Рубль является одной из старейших национальных валют в мире, его история насчитывает более 700 лет. Современный российский рубль был введен в 1993 году после распада Советского Союза.</p>
+        
+        <p>Название "рубль" происходит от древнерусского слова "рубить", так как в древности серебряные слитки (гривны) рубили на части.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Денежная система</h2>
+        <p>Денежная система России управляется Центральным банком Российской Федерации (Банком России), который был основан в 1990 году. Банк России выполняет следующие функции:</p>
+        
+        <ul>
+          <li>Эмиссия наличных денег и организация их обращения</li>
+          <li>Разработка и проведение единой государственной денежно-кредитной политики</li>
+          <li>Защита и обеспечение устойчивости рубля</li>
+          <li>Надзор и регулирование деятельности финансовых организаций</li>
+          <li>Управление золотовалютными резервами</li>
+        </ul>
+        
+        <p>Банк России является независимым от других органов государственной власти и подотчетен Государственной Думе. Основной целью денежно-кредитной политики Банка России является обеспечение ценовой стабильности.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Банкноты и монеты</h2>
+        <p>В обращении находятся банкноты номиналом 5, 10, 50, 100, 200, 500, 1000, 2000 и 5000 рублей, а также монеты номиналом 1, 5, 10 и 50 копеек, и 1, 2, 5 и 10 рублей.</p>
+        
+        <p>Современные банкноты российского рубля имеют различные элементы защиты, включая водяные знаки, защитные нити, микропечать, рельефные элементы и оптически переменные элементы.</p>
+        
+        <div class="banknotes">
+          <div class="banknote">
+            <img src="https://ru-moneta.ru/upload/moneta-ru/100-rub-1997-a.jpg" alt="100 рублей">
+            <div class="banknote-caption">100 рублей (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://www.cbr.ru/StaticHtml/File/96691/1000r_10_av.jpg" alt="1000 рублей">
+            <div class="banknote-caption">1000 рублей (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://www.cbr.ru/StaticHtml/File/96700/5000r_10_av.jpg" alt="5000 рублей">
+            <div class="banknote-caption">5000 рублей (лицевая сторона)</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="currency-section">
+        <h2>История валюты</h2>
+        <p>История российского рубля прошла несколько ключевых этапов:</p>
+        
+        <ol>
+          <li><strong>XIII век</strong> - Первое упоминание рубля как платежной единицы в Новгородской берестяной грамоте.</li>
+          <li><strong>1704 г.</strong> - При Петре I начата чеканка серебряных рублей единого образца.</li>
+          <li><strong>1897 г.</strong> - Введение золотого стандарта и денежная реформа С.Ю. Витте.</li>
+          <li><strong>1922-1991 гг.</strong> - Период советского рубля.</li>
+          <li><strong>1993 г.</strong> - Введение российского рубля после распада СССР.</li>
+          <li><strong>1998 г.</strong> - Деноминация рубля (1000:1) после финансового кризиса.</li>
+        </ol>
+        
+        <p>В 2013 году был утвержден официальный символ российского рубля — ₽, который представляет собой букву "Р" с горизонтальной чертой.</p>
+      </div>
+    </div>
+    
+    <div class="currency-section">
+      <h2>Экономическое значение</h2>
+      <p>Российский рубль играет важную роль в экономике России и стран СНГ:</p>
+      
+      <ul>
+        <li>Является основной валютой расчетов в Евразийском экономическом союзе (ЕАЭС)</li>
+        <li>Входит в число 20 наиболее торгуемых валют мира</li>
+        <li>Курс рубля сильно зависит от цен на энергоносители, особенно на нефть</li>
+        <li>С 2014 года Банк России перешел к режиму плавающего валютного курса</li>
+        <li>Россия активно развивает систему международных расчетов в национальных валютах</li>
+      </ul>
+      
+      <p>В последние годы Россия предпринимает шаги по дедолларизации экономики и увеличению доли расчетов в рублях в международной торговле, особенно со странами ЕАЭС, БРИКС и другими торговыми партнерами.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валюта США - Конвертер валют</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .currency-info-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .currency-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .currency-flag {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .currency-title {
+      flex: 1;
+    }
+    
+    .currency-title h1 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    
+    .currency-title p {
+      margin: 0;
+      color: #666;
+      font-size: 18px;
+    }
+    
+    .currency-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    .currency-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .currency-section h2 {
+      color: #333;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .currency-section p {
+      line-height: 1.6;
+      color: #444;
+    }
+    
+    .banknotes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .banknote {
+      width: calc(33.333% - 10px);
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .banknote img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .banknote-caption {
+      padding: 8px;
+      background: #f5f5f5;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+      .currency-sections {
+        grid-template-columns: 1fr;
+      }
+      
+      .banknote {
+        width: calc(50% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="currency-info-container">
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+    
+    <div class="currency-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" alt="Флаг США" class="currency-flag">
+      <div class="currency-title">
+        <h1>Доллар США (USD)</h1>
+        <p>Официальная валюта Соединенных Штатов Америки и мировая резервная валюта</p>
+      </div>
+    </div>
+    
+    <div class="currency-sections">
+      <div class="currency-section">
+        <h2>О валюте</h2>
+        <p>Доллар США (код валюты: USD, символ: $) — официальная валюта Соединенных Штатов Америки. Один доллар равен 100 центам. Федеральная резервная система США (ФРС) отвечает за выпуск и регулирование валюты.</p>
+        
+        <p>Доллар США является наиболее используемой валютой в международных транзакциях и основной резервной валютой мира. Многие страны используют доллар США в качестве официальной валюты или привязывают к нему курс своих национальных валют.</p>
+        
+        <p>Название "доллар" происходит от немецкого "талер" — серебряной монеты, которая была распространена в Европе в XV-XIX веках.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Денежная система</h2>
+        <p>Денежная система США управляется Федеральной резервной системой, которая была создана в 1913 году. ФРС выполняет следующие функции:</p>
+        
+        <ul>
+          <li>Проведение денежно-кредитной политики</li>
+          <li>Обеспечение стабильности финансовой системы</li>
+          <li>Регулирование банковских учреждений</li>
+          <li>Предоставление финансовых услуг депозитарным учреждениям</li>
+          <li>Обеспечение защиты прав потребителей финансовых услуг</li>
+        </ul>
+        
+        <p>ФРС состоит из Совета управляющих в Вашингтоне и 12 региональных Федеральных резервных банков. Решения о денежно-кредитной политике принимаются Федеральным комитетом по открытым рынкам (FOMC).</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Банкноты и монеты</h2>
+        <p>В обращении находятся банкноты номиналом 1, 2, 5, 10, 20, 50 и 100 долларов, а также монеты номиналом 1, 5, 10, 25 и 50 центов, и 1 доллар.</p>
+        
+        <p>Современные банкноты доллара США имеют множество защитных элементов, включая водяные знаки, защитные нити, микропечать, изменяющие цвет чернила и голографические элементы.</p>
+        
+        <div class="banknotes">
+          <div class="banknote">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/US_%241_obverse.jpg" alt="1 доллар">
+            <div class="banknote-caption">1 доллар (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/US_%2420_Series_2006_Obverse.jpg" alt="20 долларов">
+            <div class="banknote-caption">20 долларов (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg" alt="100 долларов">
+            <div class="banknote-caption">100 долларов (лицевая сторона)</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="currency-section">
+        <h2>История валюты</h2>
+        <p>История доллара США прошла несколько ключевых этапов:</p>
+        
+        <ol>
+          <li><strong>1785 г.</strong> - Конгресс США официально принял доллар в качестве денежной единицы страны.</li>
+          <li><strong>1863 г.</strong> - Принят Закон о национальной валюте, который установил национальную банковскую систему и единую национальную валюту.</li>
+          <li><strong>1913 г.</strong> - Создана Федеральная резервная система.</li>
+          <li><strong>1933-1971 гг.</strong> - Период золотого стандарта, когда доллар был привязан к золоту.</li>
+          <li><strong>1971 г.</strong> - Президент Никсон отменил конвертируемость доллара в золото, что привело к современной системе плавающих валютных курсов.</li>
+        </ol>
+        
+        <p>После отмены золотого стандарта доллар США стал фиатной валютой, стоимость которой определяется спросом и предложением на международных валютных рынках.</p>
+      </div>
+    </div>
+    
+    <div class="currency-section">
+      <h2>Мировое значение</h2>
+      <p>Доллар США играет центральную роль в мировой экономике:</p>
+      
+      <ul>
+        <li>Около 60% мировых валютных резервов хранятся в долларах США</li>
+        <li>Большинство международных товаров, включая нефть, торгуются в долларах</li>
+        <li>Доллар используется как официальная валюта в нескольких странах (Панама, Эквадор, Сальвадор и др.)</li>
+        <li>Многие страны привязывают курсы своих валют к доллару США</li>
+        <li>Доллар является наиболее торгуемой валютой на международном валютном рынке Форекс</li>
+      </ul>
+      
+      <p>Статус доллара как мировой резервной валюты дает США значительные экономические преимущества, включая возможность финансировать дефицит бюджета и торговый дефицит по относительно низким процентным ставкам.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  </div>
+</body>
+</html>

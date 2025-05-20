@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валюта Китая - Конвертер валют</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .currency-info-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .currency-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .currency-flag {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .currency-title {
+      flex: 1;
+    }
+    
+    .currency-title h1 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    
+    .currency-title p {
+      margin: 0;
+      color: #666;
+      font-size: 18px;
+    }
+    
+    .currency-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    .currency-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .currency-section h2 {
+      color: #333;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .currency-section p {
+      line-height: 1.6;
+      color: #444;
+    }
+    
+    .banknotes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .banknote {
+      width: calc(33.333% - 10px);
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .banknote img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .banknote-caption {
+      padding: 8px;
+      background: #f5f5f5;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      background: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+      .currency-sections {
+        grid-template-columns: 1fr;
+      }
+      
+      .banknote {
+        width: calc(50% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="currency-info-container">
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+    
+    <div class="currency-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/500px-Flag_of_the_People%27s_Republic_of_China.svg.png" alt="Флаг Китая" class="currency-flag">
+      <div class="currency-title">
+        <h1>Китайский юань (CNY)</h1>
+        <p>Официальная валюта Китайской Народной Республики</p>
+      </div>
+    </div>
+    
+    <div class="currency-sections">
+      <div class="currency-section">
+        <h2>О валюте</h2>
+        <p>Китайский юань (код валюты: CNY, символ: ¥ или 元) — официальная валюта Китайской Народной Республики. Один юань равен 10 цзяо или 100 фэням. Народный банк Китая (НБК) отвечает за выпуск и регулирование валюты.</p>
+        
+        <p>Официальное название валюты в Китае — "жэньминьби" (RMB, 人民币), что означает "народные деньги", в то время как "юань" (元) является базовой единицей этой валюты. В международной практике чаще используется термин "юань".</p>
+        
+        <p>Китайский юань становится все более важной валютой в мировой экономике по мере роста экономического влияния Китая. В 2016 году юань был включен в корзину специальных прав заимствования (СПЗ) МВФ, что подтвердило его статус как одной из мировых резервных валют.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Денежная система</h2>
+        <p>Денежная система Китая управляется Народным банком Китая (НБК), который был основан в 1948 году. НБК выполняет следующие функции:</p>
+        
+        <ul>
+          <li>Разработка и реализация денежно-кредитной политики</li>
+          <li>Выпуск национальной валюты и управление ее обращением</li>
+          <li>Регулирование финансовых рынков</li>
+          <li>Управление государственными валютными резервами и золотым запасом</li>
+          <li>Поддержание финансовой стабильности</li>
+        </ul>
+        
+        <p>Китай поддерживает режим управляемого плавающего валютного курса, при котором НБК устанавливает ежедневный базовый курс юаня к доллару США, вокруг которого курс может колебаться в определенном диапазоне.</p>
+      </div>
+      
+      <div class="currency-section">
+        <h2>Банкноты и монеты</h2>
+        <p>В обращении находятся банкноты номиналом 1, 5, 10, 20, 50 и 100 юаней, а также монеты номиналом 1, 5 цзяо и 1 юань. Банкноты номиналом 1, 2 и 5 цзяо также существуют, но встречаются редко.</p>
+        
+        <p>На банкнотах юаня изображен портрет Мао Цзэдуна и различные достопримечательности Китая. Банкноты имеют различные элементы защиты, включая водяные знаки, защитные нити, микропечать и голографические элементы.</p>
+        
+        <div class="banknotes">
+          <div class="banknote">
+            <img src="https://coinsandnotes.ru/wa-data/public/shop/products/94/80/8094/images/16626/16626.970.jpg" alt="1 юань">
+            <div class="banknote-caption">1 юань (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://coinsandnotes.ru/wa-data/public/shop/products/16/83/8316/images/17079/17079.970.jpg" alt="50 юаней">
+            <div class="banknote-caption">50 юаней (лицевая сторона)</div>
+          </div>
+          <div class="banknote">
+            <img src="https://ir.ozone.ru/s3/multimedia-e/c1000/6032839358.jpg" alt="100 юаней">
+            <div class="banknote-caption">100 юаней (лицевая сторона)</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="currency-section">
+        <h2>История валюты</h2>
+        <p>История китайского юаня прошла несколько ключевых этапов:</p>
+        
+        <ol>
+          <li><strong>1889 г.</strong> - Введение юаня в качестве официальной валюты Цинской империи.</li>
+          <li><strong>1935 г.</strong> - Денежная реформа правительства Гоминьдана.</li>
+          <li><strong>1948 г.</strong> - Введение жэньминьби Коммунистической партией Китая.</li>
+          <li><strong>1955 г.</strong> - Первая деноминация (10000:1).</li>
+          <li><strong>1980-1994 гг.</strong> - Период двойного валютного режима с отдельными курсами для внутренних и внешних операций.</li>
+          <li><strong>1994 г.</strong> - Объединение валютных курсов и введение системы управляемого плавающего курса.</li>
+          <li><strong>2005 г.</strong> - Отказ от жесткой привязки юаня к доллару США.</li>
+          <li><strong>2016 г.</strong> - Включение юаня в корзину СПЗ МВФ.</li>
+        </ol>
+        
+        <p>В последние годы Китай предпринимает шаги по интернационализации юаня, стремясь увеличить его использование в международных расчетах и инвестициях.</p>
+      </div>
+    </div>
+    
+    <div class="currency-section">
+      <h2>Роль в мировой экономике</h2>
+      <p>Китайский юань играет все более важную роль в мировой экономике:</p>
+      
+      <ul>
+        <li>Пятая по значимости валюта в международных платежах</li>
+        <li>Одна из пяти валют, входящих в корзину СПЗ МВФ</li>
+        <li>Растущая доля в мировых валютных резервах (около 2-3%)</li>
+        <li>Ключевая валюта в инициативе "Один пояс, один путь"</li>
+        <li>Развитие оффшорного рынка юаня (CNH) в Гонконге и других финансовых центрах</li>
+      </ul>
+      
+      <p>Китай активно продвигает использование юаня в международных расчетах, создавая своп-линии с центральными банками других стран, развивая системы трансграничных платежей (CIPS) и поощряя выпуск облигаций, номинированных в юанях ("панда-бонды").</p>
+      
+      <p>Важным шагом в интернационализации юаня стало также создание цифрового юаня (e-CNY) — цифровой валюты центрального банка, которая проходит тестирование в различных регионах Китая.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  </div>
+</body>
+</html>
